@@ -1,0 +1,3 @@
+[submodule "fastvdma"]
+	path = fastvdma
+	url = https://github.com/antmicro-labs/fastvdma
