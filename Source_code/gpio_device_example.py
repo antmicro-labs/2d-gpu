@@ -15,8 +15,9 @@ from litex.soc.integration.soc_core import *
 from litex.soc.integration.soc_sdram import *
 from litex.soc.integration.builder import *
 
-#------Moje importy
+#------ Our includes
 from litex.soc.cores.gpio import *
+from litex.boards.platforms.arty import *
 #------
 
 from litedram.modules import MT41K128M16
@@ -98,7 +99,7 @@ class BaseSoC(SoCCore):
             self.add_csr("ethphy")
             self.add_etherbone(phy=self.ethphy)
 
-#-------This is where the magic happens
+#------- This is where the magic happens
 
 # First we go ahead and attach some pins to our device to even make them usable
         gpio_pins=[
